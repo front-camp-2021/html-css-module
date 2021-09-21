@@ -1,0 +1,143 @@
+:root {
+    --primary-color: #6F64F8;
+}
+@font-face {
+    font-family: 'Montserrat300'; 
+    src: url(../fonts/Montserrat/Montserrat-Light.ttf); 
+   }
+  
+@font-face {
+   font-family: 'Montserrat400';
+   src: url(../fonts/Montserrat/Montserrat-Regular.ttf); 
+}
+
+@font-face {
+    font-family: 'Montserrat500';
+    src: url(../fonts/Montserrat/Montserrat-Medium.ttf); 
+}
+
+@font-face {
+    font-family: 'Montserrat600';
+    src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf); 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 400px;
+    height: 486px;
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+.card__content {
+    padding: 31px 24px 0;
+}
+
+.product-img {
+    /* border: 1px solid black; */
+    display: flex;
+    align-self: center;
+    height: 272px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.details {
+    /* border: 1px solid black;  */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Montserrat400';
+    margin: 16px 0;
+}
+
+.details__rating {
+    width: 65px;
+    height: 30px;
+    background: var(--primary-color);
+    border-radius: 3px;
+    padding: 6px 10px;
+}
+
+.details__rating output {
+    font-size: 14px;
+    color: white;   
+}
+
+.details__rating svg {
+    margin-left: 5px;
+}
+
+.details__price {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.description h4 {
+    font-family: 'Montserrat400';
+    font-size: 16px;
+    line-height: 19px;
+    margin: 23px 0 3px; 
+}
+
+.description p {
+    font-family: 'Montserrat300';
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.buttons__wishlist, .buttons__add-to-cart {
+    width: 50%;
+    height: 45px;  
+    font-family: 'Montserrat600';
+    font-size: 14px;
+    line-height: 18px;
+    border: none;
+}
+
+.buttons__wishlist {
+    background-color: #EDEDED;
+    border-radius: 0px 0px 0px 8px;
+}
+
+.buttons__wishlist svg {
+    font-size: 15px;
+    margin-right: 2px;
+}
+
+.buttons__wishlist span, .buttons__add-to-cart span {
+    line-height: 18px;
+    margin-left: 2px;
+}
+
+.buttons__add-to-cart {
+    position: relative;
+    background-color: var(--primary-color);
+    border-radius: 0px 0px 8px 0px;
+}
+
+.buttons__add-to-cart svg {
+  font-size: 17px;
+  color: white;
+  margin-right: 3px;
+}
+
+.buttons__add-to-cart span {
+    color: #FFFFFF;
+}
