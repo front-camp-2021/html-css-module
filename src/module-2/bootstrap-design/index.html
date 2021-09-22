@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap design</title>
+  <script defer src="../../../node_modules/@fortawesome/fontawesome-free/js/regular.js"></script>
+  <script defer src="../../../node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+  <script defer src="../../../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+  <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body class="p-sm-3 p-md-4 bg-light text-secondary">
+  <header class="container-fluid d-flex justify-content-start ">
+    <div>
+      <img src="../images/logo.svg">
+      <h1 class="d-inline m-2 text-primary">Online Store</h1>
+    </div>
+  </header>
+  <main>
+    <div class="p-3">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a class="link-primary" href="#"><i class="fas fa-home"></i></a></li>
+        <li class="breadcrumb-item"><a class="link-primary" style="text-decoration: none" href="#">eCommerce</a>
+        </li>
+        <li class="breadcrumb-item"><a class="link-secondary" style="text-decoration: none" href="#">Electronic</a></li>
+      </ul>
+    </div>
+    <article class="container-fluid">
+      <div class="row">
+        <aside class="col-3 pt-3 d-none d-xl-block mh-100" style="min-width: 285px">
+          <div class="d-flex justify-content-between">
+            <h4>Filters</h4>
+            <button class="btn btn-outline-primary"><i class="fas fa-angle-double-left"></i></button>
+          </div>
+          <div class="p-3 pb-5 ps-lg-4 pe-xl-3 pe-xxl-5 mt-3 mb-3 bg-white rounded"
+            style="min-height: calc(100% - 113px)">
+            <section>
+              <h5 class="mt-3">Multi Range</h5>
+              <ul class="list-group list-group-flush" style="list-style: none">
+                <li class="mt-2"><input class="form-check-input me-2" type="radio" name="range" id="1"><label
+                    class="form-check-label" for="1">$10</label></li>
+                <li class="mt-2"><input class="form-check-input me-2" type="radio" name="range" id="2"><label
+                    class="form-check-label" for="2">$10-$100</label></li>
+                <li class="mt-2"><input class="form-check-input me-2" type="radio" name="range" id="3"><label
+                    class="form-check-label" for="3">$100-$500</label></li>
+                <li class="mt-2"><input class="form-check-input me-2" type="radio" name="range" id="4"><label
+                    class="form-check-label" for="4">$500</label></li>
+                <li class="mt-2"><input class="form-check-input me-2" type="radio" name="range" id="5"><label
+                    class="form-check-label" for="5">All</label></li>
+              </ul>
+            </section>
+            <hr class="mt-4 mb-4">
+            <section>
+              <h5 class="mb-3">Category</h5>
+              <ul class="list-group list-group-flush" style="list-style: none">
+                <li class="d-flex justify-content-between mt-2"> <label for="20" class="form-check-label"><input
+                      class="form-check-input me-2" type="checkbox" id="20"><span>Cell Phones</span></label>
+                  <output>1920</output></li>
+                <li class="d-flex justify-content-between mt-2"> <label for="21" class="form-check-label"><input
+                      class="form-check-input me-2" type="checkbox" id="21"><span>Computers & Tablets</span></label>
+                  <output>4920</output></li>
+                <li class="d-flex justify-content-between mt-2"> <label for="23" class="form-check-label"><input
+                      class="form-check-input me-2" type="checkbox" id="23"><span>Cell Phone Accessories</span></label>
+                  <output>140</output>
+                </li>
+                <li class="d-flex justify-content-between mt-2"> <label for="24" class="form-check-label"><input
+                      class="form-check-input me-2" type="checkbox" id="24"><span>Appliances</span></label>
+                  <output>340</output></li>
+                <li class="d-flex justify-content-between mt-2"> <label for="25" class="form-check-label"><input
+                      class="form-check-input me-2" type="checkbox" id="25"><span>Audio</span></label>
+                  <output>566</output></li>
+                <li class="d-flex justify-content-between mt-2"> <label for="26" class="form-check-label"><input
+                      class="form-check-input me-2" type="checkbox" id="26"><span>iPhone Accessories</span></label>
+                  <output>193</output></li>
+                <li class="d-flex justify-content-between mt-2"> <label for="27" class="form-check-label"><input
+                      class="form-check-input me-2" type="checkbox" id="27"><span>Cameras & Camcorders</span></label>
+                  <output>56</output></li>
+                <li class="d-flex justify-content-between mt-2"> <label for="28" class="form-check-label"><input
+                      class="form-check-input me-2" type="checkbox" id="28"><span>TV & Home Theate</span></label>
+                  <output>5463</output></li>
+                <li class="d-flex justify-content-between mt-2"> <label for="29" class="form-check-label"><input
+                      class="form-check-input me-2" type="checkbox" id="29"><span>Small Kitchen
+                      Appliances</span></label> <output>56</output>
+                </li>
+              </ul>
+            </section>
+            <hr class="mt-4 mb-4">
+            <section>
+              <h5 class="mb-3">Brand</h5>
+              <ul class="list-group list-group-flush" style="list-style: none">
+                <li class="d-flex justify-content-between mt-2"> <label for="30" class="form-check-label"><input
+                      class="form-check-input me-2" type="checkbox" id="30"><span>Insigni</span></label>
+                  <output>220</output></li>
+                <li class="d-flex justify-content-between mt-2"> <label for="31" class="form-check-label"><input
+                      class="form-check-input me-2" type="checkbox" id="31"><span>Samsung</span></label>
+                  <output>120</output></li>
+                <li class="d-flex justify-content-between mt-2"> <label for="32" class="form-check-label"><input
+                      class="form-check-input me-2" type="checkbox" id="32"><span>Apple</span></label>
+                  <output>320</output></li>
+                <li class="d-flex justify-content-between mt-2"> <label for="33" class="form-check-label"><input
+                      class="form-check-input me-2" type="checkbox" id="33"><span>HP</span></label>
+                  <output>1920</output></li>
+                <li class="d-flex justify-content-between mt-2"> <label for="34" class="form-check-label"><input
+                      class="form-check-input me-2" type="checkbox" id="34"><span>Sony</span></label>
+                  <output>620</output></li>
+                <li class="d-flex justify-content-between mt-2"> <label for="35" class="form-check-label"><input
+                      class="form-check-input me-2" type="checkbox" id="35"><span>Metra</span></label>
+                  <output>55</output></li>
+                <li class="d-flex justify-content-between mt-2"> <label for="36" class="form-check-label"><input
+                      class="form-check-input me-2" type="checkbox" id="36"><span>Dyne</span></label>
+                  <output>456</output></li>
+                <li class="d-flex justify-content-between mt-2"> <label for="37" class="form-check-label"><input
+                      class="form-check-input me-2" type="checkbox" id="37"><span>LG</span></label> <output>10</output>
+                </li>
+                <li class="d-flex justify-content-between mt-2"> <label for="38" class="form-check-label"><input
+                      class="form-check-input me-2" type="checkbox" id="38"><span>Canon</span></label>
+                  <output>196</output></li>
+                <li class="d-flex justify-content-between mt-2"> <label for="39" class="form-check-label"><input
+                      class="form-check-input me-2" type="checkbox" id="39"><span>Speck</span></label>
+                  <output>78</output></li>
+              </ul>
+            </section>
+          </div>
+          <button type="button" class="btn btn-primary w-100 pt-2 pb-2 px-0"><span class="h6">CLEAR ALL
+              FILTERS</span></button>
+        </aside>
+
+        <!-- ====================================== -->
+
+        <section class="col-xl-9 col-xs-12 pt-3">
+          <div class="row row-cols-1 row-cols-xxl-3 row-cols-xl-2 row-cols-lg-3 row-cols-md-2 g-4">
+
+            <section class="d-flex justify-content-between w-100">
+              <div class="d-flex align-items-end">
+                <button class="btn btn-primary d-block d-xl-none me-3"><i class="fas fa-filter"></i></button>
+                <span class="h6 mb-0"> <output>7,459</output> results found</span>
+              </div>
+              <button class="btn btn-primary"><i class="far fa-heart"></i></button>
+            </section>
+            <div class="input-group mt-3">
+              <input type="text" placeholder="Search" class="form-control">
+              <button class="btn btn-outline-primary">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <div class="d-flex justify-content-center align-items-center p-3 mt-3" style="height: 300px;">
+                  <img src="../images/apple-watch.png" class="mw-100 mh-100 " alt="...">
+                </div>
+                <div class="card-body p-4" style="height: 160px; ">
+
+                  <div class="d-flex justify-content-between mb-4">
+                    <div class="d-flex align-items-center bg-primary rounded px-3">
+                      <output class="text-white">3.4</output>
+
+                      <svg class="align-baseline ms-2" version="1.1" xmlns="http://www.w3.org/2000/svg" width="13"
+                        height="13" viewBox="0 0 32 32">
+                        <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,
+                                                               31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,
+                                                               12.118l11.547-1.2L16.026,0.6L20.388,10.918z"
+                          fill="url(#half_grad)" stroke-width="3" stroke="white" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                    <span class="h5">$<output>399</output><span>
+                  </div>
+
+                  <h4 class="card-title text-truncate">Apple Watch Series 4 GPS</h4>
+                  <p class="card-text text-truncate">Redesigned from scratch and completely revised.</p>
+                </div>
+
+                <div class="card-footer btn-group  p-0">
+                  <button type="button" class="btn btn-light text-secondary pt-2 pb-2 w-50">
+                    <i class="far fa-heart me-1"></i>
+                    <span class="h6">WISHLIST</span>
+                  </button>
+                  <button type="button" class="btn btn-primary pt-2 pb-2 w-50 px-0">
+                    <i class="fa fa-shopping-basket me-1"></i>
+                    <span class="h6">ADD TO CART</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="d-flex justify-content-center align-items-center p-3 mt-3" style="min-height: 300px;">
+                  <img src="../images/macbook-pro.png" class="mw-100 mh-100" alt="...">
+                </div>
+                <div class="card-body p-4" style="height: 160px; ">
+
+                  <div class="d-flex justify-content-between mb-4">
+                    <div class="d-flex align-items-center bg-primary rounded px-3">
+                      <output class="text-white">3.4</output>
+
+                      <svg class="align-baseline ms-2" version="1.1" xmlns="http://www.w3.org/2000/svg" width="13"
+                        height="13" viewBox="0 0 32 32">
+                        <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,
+                                                               31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,
+                                                               12.118l11.547-1.2L16.026,0.6L20.388,10.918z"
+                          fill="url(#half_grad)" stroke-width="3" stroke="white" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                    <span class="h5">$<output>399</output><span>
+                  </div>
+
+                  <h4 class="card-title text-truncate">Apple Watch Series 4 GPS</h4>
+                  <p class="card-text text-truncate">Redesigned from scratch and completely revised.</p>
+                </div>
+
+                <div class="card-footer btn-group  p-0">
+                  <button type="button" class="btn btn-light text-secondary pt-2 pb-2 w-50">
+                    <i class="far fa-heart me-1"></i>
+                    <span class="h6">WISHLIST</span>
+                  </button>
+                  <button type="button" class="btn btn-primary pt-2 pb-2 w-50 px-0">
+                    <i class="fa fa-shopping-basket me-1"></i>
+                    <span class="h6">ADD TO CART</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="d-flex justify-content-center align-items-center p-3 mt-3" style="height: 300px;">
+                  <img src="../images/beats-headphones.png" class="mw-100 mh-100 " alt="...">
+                </div>
+                <div class="card-body p-4" style="height: 160px; ">
+
+                  <div class="d-flex justify-content-between mb-4">
+                    <div class="d-flex align-items-center bg-primary rounded px-3">
+                      <output class="text-white">3.4</output>
+
+                      <svg class="align-baseline ms-2" version="1.1" xmlns="http://www.w3.org/2000/svg" width="13"
+                        height="13" viewBox="0 0 32 32">
+                        <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,
+                                                               31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,
+                                                               12.118l11.547-1.2L16.026,0.6L20.388,10.918z"
+                          fill="url(#half_grad)" stroke-width="3" stroke="white" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                    <span class="h5">$<output>399</output><span>
+                  </div>
+
+                  <h4 class="card-title text-truncate">Apple Watch Series 4 GPS</h4>
+                  <p class="card-text text-truncate">Redesigned from scratch and completely revised.</p>
+                </div>
+
+                <div class="card-footer btn-group  p-0">
+                  <button type="button" class="btn btn-light text-secondary pt-2 pb-2 w-50">
+                    <i class="far fa-heart me-1"></i>
+                    <span class="h6">WISHLIST</span>
+                  </button>
+                  <button type="button" class="btn btn-primary pt-2 pb-2 w-50 px-0">
+                    <i class="fa fa-shopping-basket me-1"></i>
+                    <span class="h6">ADD TO CART</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="d-flex justify-content-center align-items-center p-3 mt-3" style="height: 300px;">
+                  <img src="../images/jbl-speaker.png" class="mw-100 mh-100 " alt="...">
+                </div>
+                <div class="card-body p-4" style="height: 160px; ">
+
+                  <div class="d-flex justify-content-between mb-4">
+                    <div class="d-flex align-items-center bg-primary rounded px-3">
+                      <output class="text-white">3.4</output>
+
+                      <svg class="align-baseline ms-2" version="1.1" xmlns="http://www.w3.org/2000/svg" width="13"
+                        height="13" viewBox="0 0 32 32">
+                        <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,
+                                                               31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,
+                                                               12.118l11.547-1.2L16.026,0.6L20.388,10.918z"
+                          fill="url(#half_grad)" stroke-width="3" stroke="white" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                    <span class="h5">$<output>399</output><span>
+                  </div>
+
+                  <h4 class="card-title text-truncate">Apple Watch Series 4 GPS</h4>
+                  <p class="card-text text-truncate">Redesigned from scratch and completely revised.</p>
+                </div>
+
+                <div class="card-footer btn-group  p-0">
+                  <button type="button" class="btn btn-light text-secondary pt-2 pb-2 w-50">
+                    <i class="far fa-heart me-1"></i>
+                    <span class="h6">WISHLIST</span>
+                  </button>
+                  <button type="button" class="btn btn-primary pt-2 pb-2 w-50 px-0">
+                    <i class="fa fa-shopping-basket me-1"></i>
+                    <span class="h6">ADD TO CART</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="d-flex justify-content-center align-items-center p-3 mt-3" style="height: 300px;">
+                  <img src="../images/homepod.png" class="mw-100 mh-100" alt="...">
+                </div>
+                <div class="card-body p-4" style="height: 160px; ">
+
+                  <div class="d-flex justify-content-between mb-4">
+                    <div class="d-flex align-items-center bg-primary rounded px-3">
+                      <output class="text-white">3.4</output>
+
+                      <svg class="align-baseline ms-2" version="1.1" xmlns="http://www.w3.org/2000/svg" width="13"
+                        height="13" viewBox="0 0 32 32">
+                        <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,
+                                                               31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,
+                                                               12.118l11.547-1.2L16.026,0.6L20.388,10.918z"
+                          fill="url(#half_grad)" stroke-width="3" stroke="white" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                    <span class="h5">$<output>399</output><span>
+                  </div>
+
+                  <h4 class="card-title text-truncate">Apple Watch Series 4 GPS</h4>
+                  <p class="card-text text-truncate">Redesigned from scratch and completely revised.</p>
+                </div>
+
+                <div class="card-footer btn-group  p-0">
+                  <button type="button" class="btn btn-light text-secondary pt-2 pb-2 w-50">
+                    <i class="far fa-heart me-1"></i>
+                    <span class="h6">WISHLIST</span>
+                  </button>
+                  <button type="button" class="btn btn-primary pt-2 pb-2 w-50 px-0">
+                    <i class="fa fa-shopping-basket me-1"></i>
+                    <span class="h6">ADD TO CART</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="d-flex justify-content-center align-items-center p-3 mt-3" style="height: 300px;">
+                  <img src="../images/iphone-x.png" class="mw-100 mh-100" alt="...">
+                </div>
+                <div class="card-body p-4" style="height: 160px; ">
+
+                  <div class="d-flex justify-content-between mb-4">
+                    <div class="d-flex align-items-center bg-primary rounded px-3">
+                      <output class="text-white">3.4</output>
+
+                      <svg class="align-baseline ms-2" version="1.1" xmlns="http://www.w3.org/2000/svg" width="13"
+                        height="13" viewBox="0 0 32 32">
+                        <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,
+                                                               31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,
+                                                               12.118l11.547-1.2L16.026,0.6L20.388,10.918z"
+                          fill="url(#half_grad)" stroke-width="3" stroke="white" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                    <span class="h5">$<output>399</output><span>
+                  </div>
+
+                  <h4 class="card-title text-truncate">Apple Watch Series 4 GPS</h4>
+                  <p class="card-text text-truncate">Redesigned from scratch and completely revised.</p>
+                </div>
+
+                <div class="card-footer btn-group  p-0">
+                  <button type="button" class="btn btn-light text-secondary pt-2 pb-2 w-50">
+                    <i class="far fa-heart me-1"></i>
+                    <span class="h6">WISHLIST</span>
+                  </button>
+                  <button type="button" class="btn btn-primary pt-2 pb-2 w-50 px-0">
+                    <i class="fa fa-shopping-basket me-1"></i>
+                    <span class="h6">ADD TO CART</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="d-flex justify-content-center align-items-center p-3 mt-3" style="height: 300px;">
+                  <img src="../images/magic-mouse.png" class="mw-100 mh-100" alt="...">
+                </div>
+                <div class="card-body p-4" style="height: 160px; ">
+
+                  <div class="d-flex justify-content-between mb-4">
+                    <div class="d-flex align-items-center bg-primary rounded px-3">
+                      <output class="text-white">3.4</output>
+
+                      <svg class="align-baseline ms-2" version="1.1" xmlns="http://www.w3.org/2000/svg" width="13"
+                        height="13" viewBox="0 0 32 32">
+                        <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,
+                                                               31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,
+                                                               12.118l11.547-1.2L16.026,0.6L20.388,10.918z"
+                          fill="url(#half_grad)" stroke-width="3" stroke="white" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                    <span class="h5">$<output>399</output><span>
+                  </div>
+
+                  <h4 class="card-title text-truncate">Apple Watch Series 4 GPS</h4>
+                  <p class="card-text text-truncate">Redesigned from scratch and completely revised.</p>
+                </div>
+
+                <div class="card-footer btn-group  p-0">
+                  <button type="button" class="btn btn-light text-secondary pt-2 pb-2 w-50">
+                    <i class="far fa-heart me-1"></i>
+                    <span class="h6">WISHLIST</span>
+                  </button>
+                  <button type="button" class="btn btn-primary pt-2 pb-2 w-50 px-0">
+                    <i class="fa fa-shopping-basket me-1"></i>
+                    <span class="h6">ADD TO CART</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="d-flex justify-content-center align-items-center p-3 mt-3" style="height: 300px;">
+                  <img src="../images/beats-headphones.png" class="mw-100 mh-100" alt="...">
+                </div>
+                <div class="card-body p-4" style="height: 160px; ">
+
+                  <div class="d-flex justify-content-between mb-4">
+                    <div class="d-flex align-items-center bg-primary rounded px-3">
+                      <output class="text-white">3.4</output>
+
+                      <svg class="align-baseline ms-2" version="1.1" xmlns="http://www.w3.org/2000/svg" width="13"
+                        height="13" viewBox="0 0 32 32">
+                        <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,
+                                                               31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,
+                                                               12.118l11.547-1.2L16.026,0.6L20.388,10.918z"
+                          fill="url(#half_grad)" stroke-width="3" stroke="white" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                    <span class="h5">$<output>399</output><span>
+                  </div>
+
+                  <h4 class="card-title text-truncate">Apple Watch Series 4 GPS</h4>
+                  <p class="card-text text-truncate">Redesigned from scratch and completely revised.</p>
+                </div>
+
+                <div class="card-footer btn-group  p-0">
+                  <button type="button" class="btn btn-light text-secondary pt-2 pb-2 w-50">
+                    <i class="far fa-heart me-1"></i>
+                    <span class="h6">WISHLIST</span>
+                  </button>
+                  <button type="button" class="btn btn-primary pt-2 pb-2 w-50 px-0">
+                    <i class="fa fa-shopping-basket me-1"></i>
+                    <span class="h6">ADD TO CART</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="d-flex justify-content-center align-items-center p-3 mt-3" style="height: 300px;">
+                  <img src="../images/ipad-pro.png" class="mw-100 mh-100" alt="...">
+                </div>
+                <div class="card-body p-4" style="height: 160px; ">
+
+                  <div class="d-flex justify-content-between mb-4">
+                    <div class="d-flex align-items-center bg-primary rounded px-3">
+                      <output class="text-white">3.4</output>
+
+                      <svg class="align-baseline ms-2" version="1.1" xmlns="http://www.w3.org/2000/svg" width="13"
+                        height="13" viewBox="0 0 32 32">
+                        <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,
+                                                               31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,
+                                                               12.118l11.547-1.2L16.026,0.6L20.388,10.918z"
+                          fill="url(#half_grad)" stroke-width="3" stroke="white" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                    <span class="h5">$<output>399</output><span>
+                  </div>
+
+                  <h4 class="card-title text-truncate">Apple Watch Series 4 GPS</h4>
+                  <p class="card-text text-truncate">Redesigned from scratch and completely revised.</p>
+                </div>
+
+                <div class="card-footer btn-group  p-0">
+                  <button type="button" class="btn btn-light text-secondary pt-2 pb-2 w-50">
+                    <i class="far fa-heart me-1"></i>
+                    <span class="h6">WISHLIST</span>
+                  </button>
+                  <button type="button" class="btn btn-primary pt-2 pb-2 w-50 px-0">
+                    <i class="fa fa-shopping-basket me-1"></i>
+                    <span class="h6">ADD TO CART</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+    </article>
+    <footer class="d-flex justify-content-center align-items-center p-3 mt-3">
+      <ul class="pagination">
+        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </footer>
+  </main>
+
+</body>
+
+</html>

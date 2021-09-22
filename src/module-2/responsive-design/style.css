@@ -55,14 +55,6 @@ header .left-side h1 {
    margin-left: 22px;
 }
 
-main article {
-    /* position: relative; */
-}
-
-.breadcrumb-container {
-
-}
-
 ul.breadcrumb {
     font-family: 'Montserrat400';
     padding: 10px 0;
