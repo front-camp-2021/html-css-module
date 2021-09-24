@@ -1,8 +1,13 @@
 aside.filters {
     color: #2c2c2c;
+  //height: 100%;
+  align-self: stretch;
+
 }
 .filters {
-    align-self: stretch;
+  //height: 100%;
+
+  align-self: stretch;
     &__title {
         @include flexbox(space-between);
         height: 60px;
@@ -35,7 +40,9 @@ aside.filters {
         line-height: 40px;
     }
 }
-
+.filters-container {
+  height: 100%;
+}
 .filters__list {
     height: calc(100% - 80px - 70px);
     width: 535px;
