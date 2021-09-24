@@ -1,0 +1,33 @@
+@mixin flexbox($j, $a: center, $d: row, $w: nowrap) {
+    display: flex;
+    justify-content: $j;
+    align-items: $a;
+    flex-direction: $d;
+    flex-wrap: $w;
+}
+@mixin dimensions($w, $h) {
+    width: $w;
+    height: $h;
+}
+@mixin font($font-family, $size: false, $lh: false, $colour: false, $weight: false) {
+    font-family: $font-family, "Source Sans Pro", sans-serif;
+    @if $size {
+        font-size: $size;
+    }
+    @if $lh {
+        line-height: $lh;
+    }
+    @if $colour {
+        color: $colour;
+    }
+    @if $weight {
+        font-weight: $weight;
+    }
+}
+
+@mixin truncate($truncation-boundary) {
+    max-width: $truncation-boundary;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

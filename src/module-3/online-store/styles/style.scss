@@ -1,1 +1,142 @@
+@use "../styles/colors" as *;
+@use "../styles/mixins" as *;
+@use "../styles/fonts" as *;
 
+@import "../styles/filters";
+@import "../styles/check-box";
+@import "../styles/products";
+@import "../styles/pagination";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+%box-border {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+    border: none;
+    border-radius: 8px;
+}
+body {
+    padding: 30px;
+    background-color: #f9f9f9;
+}
+header {
+    height: 100px;
+    .left-side {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .logo {
+            @include dimensions(91px, 72px);
+        }
+        h1 {
+            @include font("Montserrat600", 48px);
+            color: $primary-color;
+            margin-left: 22px;
+        }
+    }
+}
+
+ul.breadcrumb {
+    font-family: "Montserrat400", "Source Sans Pro", sans-serif;
+    list-style: none;
+    margin: 10px 0;
+    li {
+        display: inline;
+        font-size: 18px;
+        a {
+            font-size: 14px;
+            color: $primary-color;
+            text-decoration: none;
+            &:hover {
+                color: $primary-color;
+                text-decoration: underline;
+            }
+        }
+        .arrow {
+            font-size: 14px;
+            color: #2c2c2c;
+            margin: 0 10px;
+        }
+        &:nth-of-type(1) a {
+            font-size: 19px;
+        }
+        &:nth-of-type(3) a {
+            color: #2c2c2c;
+        }
+    }
+}
+article {
+    display: flex;
+    width: 100%;
+}
+footer {
+    @include flexbox(center, center);
+    @include font("Montserrat400", 18px);
+    height: 70px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1440px) {
+    .btn-filter {
+        display: inline-block;
+    }
+    //  -- Will need to add such clases onclick
+    // body {
+    //     overflow: hidden;
+    // }
+    // .filters-container {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0px;
+    //     z-index: 3;
+    //     width: 100vw;
+    //     height: 100vh;
+    //     background-color: rgba(0, 0, 0, 0.315);
+    // }
+    .filters {
+    //  -- Will need to add such clases onclick
+        // position: fixed;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: -500px;
+        z-index: 4;
+        background-color: #f9f9f9;
+        border: 1px solid lightgray;
+        padding: 20px 8px;
+    }
+    section.products {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .pagination {
+        .pages {
+            overflow: hidden;
+        }
+    }
+}
+@media screen and (max-width: 620px) {
+    body {
+        padding: 15px;
+    }
+    header {
+        .left-side {
+            h1 {
+                font-size: 42px;
+                margin-left: 15px;
+            }
+        }
+    }
+    section.products {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 420px) {
+    header {
+        margin-bottom: 20px;
+    }
+}

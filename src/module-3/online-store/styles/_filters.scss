@@ -1,0 +1,101 @@
+aside.filters {
+    color: #2c2c2c;
+}
+.filters {
+    align-self: stretch;
+    &__title {
+        @include flexbox(space-between);
+        height: 60px;
+        h4 {
+            @include font("Montserrat400", 18px);
+        }
+    }
+}
+.btn-small {
+    @include dimensions(47px, 40px);
+    @extend %box-border;
+}
+.btn-filter {
+    display: none;
+    font-size: 16px;
+    padding-top: 3px;
+    margin-right: 10px;
+    &:hover {
+        background-color: rgb(250, 249, 249);
+    }
+}
+
+.filters__title button {
+    background-color: #ffffff;
+    &:hover {
+        background-color: rgb(250, 249, 249);
+    }
+    .arrow {
+        font-size: 17px;
+        line-height: 40px;
+    }
+}
+
+.filters__list {
+    height: calc(100% - 80px - 70px);
+    width: 535px;
+    background-color: #ffffff;
+    margin-top: 10px;
+    padding: 20px 144px 20px 30px;
+    @extend %box-border;
+    hr {
+        margin: 25px 0;
+    }
+    @media screen and (max-width: 1750px) {
+            width: 390px;
+            padding-right: 40px;
+    }
+    @media screen and (max-width: 1440px) {
+       align-self: stretch;
+    //  -- Will need to add such clases onclick
+    //    overflow-y: scroll;
+    }
+    @media screen and (max-width: 1200px) {
+            width: 340px;
+            padding-right: 40px;
+    }
+    @media screen and (max-width: 420px) {
+            width: 300px;
+            padding-left: 15px;
+            padding-right: 20px;
+    }
+}
+
+.filters__multi-range h5,
+.filters__category h5,
+.filters__brand h5 {
+    @include font("Montserrat600", 18px);
+    margin: 10px 0 15px 0;
+}
+
+.filters__multi-range ul,
+.filters__category ul,
+.filters__brand ul {
+    width: 100%;
+    list-style: none;
+}
+
+.filters__multi-range ul li,
+.filters__category ul li,
+.filters__brand ul li {
+    @include font("Montserrat300", 16px, 32px);
+    @include flexbox(space-between);
+    width: 100%;
+}
+
+.filters__btn-clear-all {
+    @include dimensions(100%, 56px);
+    @include font("Montserrat400", 18px);
+    color: white;
+    background: $primary-color;
+    margin-top: 15px;
+    @extend %box-border;
+    &:hover {
+        background-color: #574fc4;
+    }
+}

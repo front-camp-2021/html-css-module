@@ -1,0 +1,29 @@
+.pagination {
+    @include flexbox(center, center);
+    .pages {
+        height: 40px;
+        line-height: 40px;
+        background-color: #ededed;
+        border-radius: 20px;
+    }
+    a {
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 50%;
+    }
+
+    a.active {
+        background-color: $primary-color;
+        color: white;
+    }
+
+    a.prev,
+    a.next {
+        margin: 0 15px;
+        background-color: #ededed;
+    }
+
+    a:hover:not(.active) {
+        background-color: #ddd;
+    }
+}
