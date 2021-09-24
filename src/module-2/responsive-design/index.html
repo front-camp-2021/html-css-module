@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive layout</title>
+    <script defer src="../../../node_modules/@fortawesome/fontawesome-free/js/regular.js"></script>
+    <script defer src="../../../node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="../../../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="left-side">
+            <img src="../images/logo.svg" alt="" class="logo">
+            <h1>Online Store</h1>
+        </div>
+    </header>
+    <main>
+        <div class="breadcrumb-container">
+            <ul class="breadcrumb">
+                <li><a href="#"><i class="fas fa-home"></i></a></li>
+                <li><i class="fas fa-angle-double-right arrow"></i><a href="#">eCommerce</a></li>
+                <li><i class="fas fa-angle-double-right arrow"></i><a href="#">Electronic</a></li>
+            </ul>
+        </div>
+        <article>
+            <aside class="filters">
+                <div class="filters__title">
+                    <h4>Filters</h4>
+                    <button class="btn-small"><i class="fas fa-angle-double-left arrow"></i></button>
+                </div>
+                <div class="filters__list">
+                    <section class="filters__multi-range">
+                        <h5>Multi Range</h5>
+                        <ul>
+                            <li><label for="1" class="custom-radio"><input type="radio" name="range"
+                                        id="1"><span>$10</span></label></li>
+                            <li><label for="2" class="custom-radio"><input type="radio" name="range"
+                                        id="2"><span>$10-$100</span></label></li>
+                            <li><label for="3" class="custom-radio"><input type="radio" name="range"
+                                        id="3"><span>$100-$500</span></label></li>
+                            <li><label for="4" class="custom-radio"><input type="radio" name="range"
+                                        id="4"><span>$500</span></label></li>
+                            <li><label for="5" class="custom-radio"><input type="radio" name="range"
+                                        id="5"><span>All</span></label></li>
+                        </ul>
+                    </section>
+                    <hr>
+                    <section class="filters__category">
+                        <h5>Ctegory</h5>
+                        <ul>
+                            <li> <label for="21" class="custom-checkbox"><input type="checkbox" name="" id="21">
+                                    <span>Cell Phones</span></label> <output>1920</output></li>
+                            <li> <label for="22" class="custom-checkbox"><input type="checkbox" name="" id="22">
+                                    <span>Computers & Tablets</span></label> <output>1820</output></li>
+                            <li> <label for="23" class="custom-checkbox"><input type="checkbox" name="" id="23">
+                                    <span>Cell Phone Accessories</span></label> <output>462</output></li>
+                            <li> <label for="24" class="custom-checkbox"><input type="checkbox" name="" id="24">
+                                    <span>Appliances</span></label> <output>6556</output></li>
+                            <li> <label for="25" class="custom-checkbox"><input type="checkbox" name="" id="25">
+                                    <span>Audio</span></label> <output>120</output></li>
+                            <li> <label for="26" class="custom-checkbox"><input type="checkbox" name="" id="26">
+                                    <span>iPhone Accessories</span></label> <output>353</output></li>
+                            <li> <label for="27" class="custom-checkbox"><input type="checkbox" name="" id="27">
+                                    <span>Cameras & Camcorders</span></label> <output>45</output></li>
+                            <li> <label for="28" class="custom-checkbox"><input type="checkbox" name="" id="28">
+                                    <span>iPhone Cases & Clips</span></label> <output>456</output></li>
+                            <li> <label for="29" class="custom-checkbox"><input type="checkbox" name="" id="29">
+                                    <span>TV & Home Theater</span></label> <output>55</output></li>
+                            <li> <label for="20" class="custom-checkbox"><input type="checkbox" name="" id="20">
+                                    <span>Small Kitchen Appliances</span></label> <output>10</output></li>
+                        </ul>
+                    </section>
+                    <hr>
+                    <section class="filters__brand">
+                        <h5>Brand</h5>
+                        <ul>
+                            <li> <label for="30" class="custom-checkbox"><input type="checkbox" name="" id="30">
+                                    <span>Insigni</span></label> <output>220</output> </li>
+                            <li> <label for="31" class="custom-checkbox"><input type="checkbox" name="" id="31">
+                                    <span>Samsung</span></label> <output>120</output> </li>
+                            <li> <label for="32" class="custom-checkbox"><input type="checkbox" name="" id="32">
+                                    <span>Apple</span></label> <output>320</output> </li>
+                            <li> <label for="33" class="custom-checkbox"><input type="checkbox" name="" id="33">
+                                    <span>HP</span></label> <output>32</output> </li>
+                            <li> <label for="34" class="custom-checkbox"><input type="checkbox" name="" id="34">
+                                    <span>Sony</span></label> <output>520</output> </li>
+                            <li> <label for="35" class="custom-checkbox"><input type="checkbox" name="" id="35">
+                                    <span>Metra</span></label> <output>55</output> </li>
+                            <li> <label for="36" class="custom-checkbox"><input type="checkbox" name="" id="36">
+                                    <span>Dyne</span></label> <output>120</output> </li>
+                            <li> <label for="37" class="custom-checkbox"><input type="checkbox" name="" id="37">
+                                    <span>LG</span></label> <output>98</output> </li>
+                            <li> <label for="38" class="custom-checkbox"><input type="checkbox" name="" id="38">
+                                    <span>Canon</span></label> <output>99</output> </li>
+                            <li> <label for="39" class="custom-checkbox"><input type="checkbox" name="" id="39">
+                                    <span>Speck</span></label> <output>575</output> </li>
+
+                        </ul>
+                    </section>
+                </div>
+                <button class="clear-all">CLEAR ALL FILTERS</button>
+            </aside>
+
+            <!-- ====================================== -->
+            <section class="products">
+                <section class="products__info">
+                    <div>
+                        <span><button class="btn-small btn-filter"><i class="fas fa-filter"></i></button></span>
+                        <span> <output>7,459</output> results found</span>
+                    </div>
+                    <button class="btn-small"><i class="far fa-heart"></i></button>
+                </section>
+                <input type="text" placeholder="Search" class="products__search">
+                <i class="fas fa-search search-icon"></i>
+                <section class="products__product-container">
+                    <div class="card">
+                        <section class="card__content">
+                            <div class="img-content">
+                                <img class="product-img" src="../images/apple-watch.png" alt="apple watch">
+                            </div>
+
+                            <section class="details">
+                                <div class="details__rating">
+                                    <output>3.4</output>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        viewBox="0 0 32 32">
+                                        <!-- <defs>
+                                    <linearGradient id="half_grad">
+                                        <stop offset="50%" stop-color="yellow" />
+                                        <stop offset="50%" stop-color="grey" stop-opacity="1" />
+                                    </linearGradient>
+                                </defs> -->
+                                        <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,
+                         31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,
+                         12.118l11.547-1.2L16.026,0.6L20.388,10.918z" fill="url(#half_grad)" stroke-width="2"
+                                            stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="details__price">$<output>399</output>
+                            </section>
+
+                            <section class="description">
+                                <h4>Apple Watch Series 4 GPS</h4>
+                                <p>Redesigned from scratch and completely revised.</p>
+                            </section>
+                        </section>
+                        <section class="buttons-block">
+                            <button class="buttons__wishlist">
+                                <i class="far fa-heart"></i>
+                                <span>WISHLIST</span>
+                            </button>
+                            <button class="buttons__add-to-cart">
+                                <i class="fa fa-shopping-basket"></i>
+                                <span>ADD TO CART</span>
+                            </button>
+                        </section>
+                    </div>
+                    <!-- 2 --------------------------------------------------------- -->
+                    <div class="card">
+                        <section class="card__content">
+                            <div class="img-content">
+                                <img class="product-img" src="../images/jbl-speaker.png" alt="apple watch">
+                            </div>
+
+                            <section class="details">
+                                <div class="details__rating">
+                                    <output>3.4</output>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        viewBox="0 0 32 32">
+                                        <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,
+                         31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,
+                         12.118l11.547-1.2L16.026,0.6L20.388,10.918z" fill="url(#half_grad)" stroke-width="2"
+                                            stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="details__price">$<output>399</output>
+                            </section>
+
+                            <section class="description">
+                                <h4>Apple Watch Series 4 GPS</h4>
+                                <p>Redesigned from scratch and completely revised.</p>
+                            </section>
+                        </section>
+                        <section class="buttons-block">
+                            <button class="buttons__wishlist">
+                                <i class="far fa-heart"></i>
+                                <span>WISHLIST</span>
+                            </button>
+                            <button class="buttons__add-to-cart">
+                                <i class="fa fa-shopping-basket"></i>
+                                <span>ADD TO CART</span>
+                            </button>
+                        </section>
+                    </div>
+                    <!-- 3 ---------------------------------------------------------------------- -->
+
+                    <div class="card">
+                        <section class="card__content">
+                            <div class="img-content">
+                                <img class="product-img" src="../images/beats-headphones.png" alt="apple watch">
+                            </div>
+
+                            <section class="details">
+                                <div class="details__rating">
+                                    <output>3.4</output>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        viewBox="0 0 32 32">
+                                        <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,
+                         31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,
+                         12.118l11.547-1.2L16.026,0.6L20.388,10.918z" fill="url(#half_grad)" stroke-width="2"
+                                            stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="details__price">$<output>399</output>
+                            </section>
+
+                            <section class="description">
+                                <h4>Apple Watch Series 4 GPS</h4>
+                                <p>Redesigned from scratch and completely revised.</p>
+                            </section>
+                        </section>
+                        <section class="buttons-block">
+                            <button class="buttons__wishlist">
+                                <i class="far fa-heart"></i>
+                                <span>WISHLIST</span>
+                            </button>
+                            <button class="buttons__add-to-cart">
+                                <i class="fa fa-shopping-basket"></i>
+                                <span>ADD TO CART</span>
+                            </button>
+                        </section>
+                    </div>
+                    <!-- 4 -------------------------------------------------------------------- -->
+
+                    <div class="card">
+                        <section class="card__content">
+                            <div class="img-content">
+                                <img class="product-img" src="../images/ipad-pro.png" alt="apple watch">
+                            </div>
+
+                            <section class="details">
+                                <div class="details__rating">
+                                    <output>3.4</output>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        viewBox="0 0 32 32">
+                                        <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,
+                         31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,
+                         12.118l11.547-1.2L16.026,0.6L20.388,10.918z" fill="url(#half_grad)" stroke-width="2"
+                                            stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="details__price">$<output>399</output>
+                            </section>
+
+                            <section class="description">
+                                <h4>Apple Watch Series 4 GPS</h4>
+                                <p>Redesigned from scratch and completely revised.</p>
+                            </section>
+                        </section>
+                        <section class="buttons-block">
+                            <button class="buttons__wishlist">
+                                <i class="far fa-heart"></i>
+                                <span>WISHLIST</span>
+                            </button>
+                            <button class="buttons__add-to-cart">
+                                <i class="fa fa-shopping-basket"></i>
+                                <span>ADD TO CART</span>
+                            </button>
+                        </section>
+                    </div>
+                    <!-- 5 ---------------------------------------------------------------------- -->
+
+                    <div class="card">
+                        <section class="card__content">
+                            <div class="img-content">
+                                <img class="product-img" src="../images/iphone-x.png" alt="apple watch">
+                            </div>
+
+                            <section class="details">
+                                <div class="details__rating">
+                                    <output>3.4</output>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        viewBox="0 0 32 32">
+                                        <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,
+                         31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,
+                         12.118l11.547-1.2L16.026,0.6L20.388,10.918z" fill="url(#half_grad)" stroke-width="2"
+                                            stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="details__price">$<output>399</output>
+                            </section>
+
+                            <section class="description">
+                                <h4>Apple Watch Series 4 GPS</h4>
+                                <p>Redesigned from scratch and completely revised.</p>
+                            </section>
+                        </section>
+                        <section class="buttons-block">
+                            <button class="buttons__wishlist">
+                                <i class="far fa-heart"></i>
+                                <span>WISHLIST</span>
+                            </button>
+                            <button class="buttons__add-to-cart">
+                                <i class="fa fa-shopping-basket"></i>
+                                <span>ADD TO CART</span>
+                            </button>
+                        </section>
+                    </div>
+
+                    <!-- 6 ---------------------------------------------------------------------- -->
+
+                    <div class="card">
+                        <section class="card__content">
+                            <div class="img-content">
+                                <img class="product-img" src="../images/macbook-pro.png" alt="apple watch">
+                            </div>
+
+                            <section class="details">
+                                <div class="details__rating">
+                                    <output>3.4</output>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        viewBox="0 0 32 32">
+                                        <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,
+                         31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,
+                         12.118l11.547-1.2L16.026,0.6L20.388,10.918z" fill="url(#half_grad)" stroke-width="2"
+                                            stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="details__price">$<output>399</output>
+                            </section>
+
+                            <section class="description">
+                                <h4>Apple Watch Series 4 GPS</h4>
+                                <p>Redesigned from scratch and completely revised.</p>
+                            </section>
+                        </section>
+                        <section class="buttons-block">
+                            <button class="buttons__wishlist">
+                                <i class="far fa-heart"></i>
+                                <span>WISHLIST</span>
+                            </button>
+                            <button class="buttons__add-to-cart">
+                                <i class="fa fa-shopping-basket"></i>
+                                <span>ADD TO CART</span>
+                            </button>
+                        </section>
+                    </div>
+
+                    <!-- 7 ---------------------------------------------------------------------- -->
+
+                    <div class="card">
+                        <section class="card__content">
+                            <div class="img-content">
+                                <img class="product-img" src="../images/macbook-pro.png" alt="apple watch">
+                            </div>
+
+                            <section class="details">
+                                <div class="details__rating">
+                                    <output>3.4</output>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        viewBox="0 0 32 32">
+                                        <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,
+                         31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,
+                         12.118l11.547-1.2L16.026,0.6L20.388,10.918z" fill="url(#half_grad)" stroke-width="2"
+                                            stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="details__price">$<output>399</output>
+                            </section>
+
+                            <section class="description">
+                                <h4>Apple Watch Series 4 GPS</h4>
+                                <p>Redesigned from scratch and completely revised.</p>
+                            </section>
+                        </section>
+                        <section class="buttons-block">
+                            <button class="buttons__wishlist">
+                                <i class="far fa-heart"></i>
+                                <span>WISHLIST</span>
+                            </button>
+                            <button class="buttons__add-to-cart">
+                                <i class="fa fa-shopping-basket"></i>
+                                <span>ADD TO CART</span>
+                            </button>
+                        </section>
+                    </div>
+
+                    <!-- 8 ---------------------------------------------------------------------- -->
+                    <div class="card">
+                        <section class="card__content">
+                            <div class="img-content">
+                                <img class="product-img" src="../images/macbook-pro.png" alt="apple watch">
+                            </div>
+
+                            <section class="details">
+                                <div class="details__rating">
+                                    <output>3.4</output>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        viewBox="0 0 32 32">
+                                        <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,
+                         31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,
+                         12.118l11.547-1.2L16.026,0.6L20.388,10.918z" fill="url(#half_grad)" stroke-width="2"
+                                            stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="details__price">$<output>399</output>
+                            </section>
+
+                            <section class="description">
+                                <h4>Apple Watch Series 4 GPS</h4>
+                                <p>Redesigned from scratch and completely revised.</p>
+                            </section>
+                        </section>
+                        <section class="buttons-block">
+                            <button class="buttons__wishlist">
+                                <i class="far fa-heart"></i>
+                                <span>WISHLIST</span>
+                            </button>
+                            <button class="buttons__add-to-cart">
+                                <i class="fa fa-shopping-basket"></i>
+                                <span>ADD TO CART</span>
+                            </button>
+                        </section>
+                    </div>
+
+                    <!-- 9 ---------------------------------------------------------------------- -->
+                    <div class="card">
+                        <section class="card__content">
+                            <div class="img-content">
+                                <img class="product-img" src="../images/macbook-pro.png" alt="apple watch">
+                            </div>
+
+                            <section class="details">
+                                <div class="details__rating">
+                                    <output>3.4</output>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        viewBox="0 0 32 32">
+                                        <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,
+                         31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,
+                         12.118l11.547-1.2L16.026,0.6L20.388,10.918z" fill="url(#half_grad)" stroke-width="2"
+                                            stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="details__price">$<output>399</output>
+                            </section>
+
+                            <section class="description">
+                                <h4>Apple Watch Series 4 GPS</h4>
+                                <p>Redesigned from scratch and completely revised.</p>
+                            </section>
+                        </section>
+                        <section class="buttons-block">
+                            <button class="buttons__wishlist">
+                                <i class="far fa-heart"></i>
+                                <span>WISHLIST</span>
+                            </button>
+                            <button class="buttons__add-to-cart">
+                                <i class="fa fa-shopping-basket"></i>
+                                <span>ADD TO CART</span>
+                            </button>
+                        </section>
+                    </div>
+
+                    <!-- ---------------------------------------------------------------------- -->
+
+                </section>
+            </section>
+        </article>
+        <footer>
+            <div class="pagination">
+                <a href="#" class="prev">❮</a>
+                <div class="pages">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#" class="active">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                </div>
+                <a href="#" class="next">❯</a>
+            </div>
+        </footer>
+    </main>
+
+</body>
+
+</html>
